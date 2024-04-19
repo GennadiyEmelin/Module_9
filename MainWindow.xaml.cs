@@ -21,9 +21,16 @@ namespace Module_9
             InitializeComponent();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
+        string[] Text;
 
+        private void ButtonWork1_Click(object sender, RoutedEventArgs e)
+        {
+            ListBoxWork1.Items.Clear();
+            Text = TextBoxWork1.Text.Split();
+            foreach (string s in Text)
+            {
+                ListBoxWork1.Items.Add(s);
+            }
         }
     }
 }

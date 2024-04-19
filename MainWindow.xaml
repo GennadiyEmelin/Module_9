@@ -24,14 +24,13 @@
                  Text="Введите предложение" 
                  VerticalAlignment="Top" 
                  Width="380" 
-                 Height="46"
-                 TextChanged="TextBox_TextChanged"/>
+                 Height="46"/>
         <Button x:Name="ButtonWork1" 
                 Content="Кнопка"
                 HorizontalAlignment="Left" 
                 Margin="10,97,0,0" 
                 VerticalAlignment="Top" 
-                Height="37" Width="77"/>
+                Height="37" Width="77" Click="ButtonWork1_Click"/>
         <ListBox  x:Name="ListBoxWork1"
                   d:ItemsSource="{d:SampleData ItemCount=5}" 
                   Margin="10,152,10,10"/>
