@@ -32,5 +32,19 @@ namespace Module_9
                 ListBoxWork1.Items.Add(s);
             }
         }
+
+        string[] result2;
+        string result;
+
+        private void ButtonWork2_Click(object sender, RoutedEventArgs e)
+        {
+            result = "";
+            result2 = TextBoxWork2.Text.Split();
+            for (int i = result2.Length - 1; i >= 0; i--)
+            {
+                result += " " + result2[i];
+            }
+            LabelWork2.Content = result;
+        }
     }
 }

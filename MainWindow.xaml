@@ -49,7 +49,7 @@
                 Margin="10,97,0,0" 
                 VerticalAlignment="Top" 
                 Height="37" 
-                Width="77"/>
+                Width="77" Click="ButtonWork2_Click"/>
         <Label x:Name="LabelWork2" 
                Grid.Column="1" 
                Content="Label" 
