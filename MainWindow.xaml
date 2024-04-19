@@ -5,8 +5,60 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Module_9"
         mc:Ignorable="d"
-        Title="Test" Height="450" Width="800">
-    <Grid>
+        Title="Test" 
+        Height="450" 
+        Width="800"
+        MinHeight="450"
+        MaxHeight="450"
+        MinWidth="800"
+        MaxWidth="800">
+    <Grid ShowGridLines="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="TextBoxWork1" 
+                 HorizontalAlignment="Center" 
+                 Margin="0,38,0,0" 
+                 TextWrapping="Wrap" 
+                 Text="Введите предложение" 
+                 VerticalAlignment="Top" 
+                 Width="380" 
+                 Height="46"
+                 TextChanged="TextBox_TextChanged"/>
+        <Button x:Name="ButtonWork1" 
+                Content="Кнопка"
+                HorizontalAlignment="Left" 
+                Margin="10,97,0,0" 
+                VerticalAlignment="Top" 
+                Height="37" Width="77"/>
+        <ListBox  x:Name="ListBoxWork1"
+                  d:ItemsSource="{d:SampleData ItemCount=5}" 
+                  Margin="10,152,10,10"/>
+        <TextBox x:Name="TextBoxWork2" 
+                 Grid.Column="1" 
+                 HorizontalAlignment="Center" 
+                 Margin="0,38,0,0" 
+                 TextWrapping="Wrap" 
+                 Text="Введите предложение" 
+                 VerticalAlignment="Top" 
+                 Width="380" Height="46"/>
+        <Button x:Name="ButtonWork2" 
+                Grid.Column="1" 
+                Content="Кнопка" 
+                HorizontalAlignment="Left" 
+                Margin="10,97,0,0" 
+                VerticalAlignment="Top" 
+                Height="37" 
+                Width="77"/>
+        <Label x:Name="LabelWork2" 
+               Grid.Column="1" 
+               Content="Label" 
+               HorizontalAlignment="Center" 
+               Margin="0,152,0,0" 
+               VerticalAlignment="Top" 
+               Height="272" 
+               Width="380"/>
 
     </Grid>
 </Window>
